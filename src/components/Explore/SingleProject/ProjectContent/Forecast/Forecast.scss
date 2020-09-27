@@ -1,0 +1,152 @@
+@import "../../../../../styles/variables";
+
+.Forecast {
+  margin-top: 35px;
+
+  .Title {
+    margin-bottom: 56px;
+  }
+
+  .DevelopmentStage {
+    margin-top: 15px;
+    padding: 0 40px;
+  }
+
+  .ds-chart {
+    text-align: center;
+    font-family: $secondary-font;
+
+    .ds-count {
+      font-size: 8px;
+      color: $secondary-color-lighter;
+    }
+    .ds-line {
+      position: absolute;
+      z-index: -1;
+      top: 28px;
+      width: 100%;
+      border-bottom: 1px solid silver;
+    }
+    .ds-line-half {
+      position: absolute;
+      z-index: -1;
+      top: 28px;
+      width: 50%;
+      border-bottom: 1px solid silver;
+    }
+    .ds-dashed-line-half-right {
+      position: absolute;
+      z-index: -1;
+      top: 28px;
+      width: 50%;
+      right: 0;
+      border-bottom: 1px dashed silver;
+    }
+    .ds-dashed-line-half-left {
+      position: absolute;
+      z-index: -1;
+      top: 28px;
+      width: 50%;
+      border-bottom: 1px dashed silver;
+    }
+    .ds-ball {
+      height: 15px;
+      width: 15px;
+      margin: 0px auto;
+      border-radius: 18px;
+      margin-top: 10px;
+    }
+    .ds-full {
+      background: $primary-color-light;
+    }
+    .ds-current {
+      border: 1px solid $primary-color-light;
+      background: white;
+    }
+    .ds-empty {
+      border: 1px solid $secondary-color-lighter;
+      background: white;
+    }
+    .ds-title {
+      word-break: break-all;
+      text-transform: capitalize;
+      font-size: 12px;
+      font-weight: 300;
+      color: $charcoal-grey-two;
+    }
+    .ds-date {
+      color: $secondary-color-lighter;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .ds-image {
+      width: 60px;
+      height: 60px;
+      float: right;
+      border-radius: 50px;
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .solar-financial-restricted {
+    margin-top: 56px !important;
+    padding-bottom: 56px;
+  }
+
+  .forecast-info {
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: $secondary-font;
+
+    .forecast-info-title {
+      font-size: 24px;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: $primary-color;
+    }
+    .forecast-info-sub-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $secondary-color;
+      font-weight: 300;
+      margin-top: $pixel-base;
+    }
+    .forecast-info-content {
+      font-size: 14px;
+      color: $secondary-color;
+      margin-top: $pixel-base * 2;
+      .learn-more {
+        margin-top: $pixel-base * 2;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+  .link-to-records {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .solar-financial-restricted {
+    margin-top: 35px;
+    background: $secondary-color-very-light;
+
+    .restricted-info-sub-title {
+      color: $secondary-color;
+      text-transform: capitalize;
+      margin-top: 10px;
+    }
+    .link-to-login {
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+a {
+  color: inherit;
+}

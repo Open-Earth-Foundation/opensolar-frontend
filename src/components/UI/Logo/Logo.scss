@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.Logo {
+  padding: 8px;
+  cursor: pointer;
+  font-family: $primary-font;
+  a {
+    color: inherit;
+    font-size: inherit;
+  }
+  img {
+    height: 100%;
+  }
+}
+.logo-default {
+  color: $primary-color-light;
+  font-size: 24px;
+  .SecondPart {
+    font-weight: 500;
+  }
+}
+.logo-white {
+  color: white;
+  font-size: 22px;
+  .SecondPart {
+    font-weight: bold;
+  }
+}
+.FirstPart {
+  color: inherit;
+  font-size: inherit;
+  font-weight: 200;
+}
+
+.SecondPart {
+  color: inherit;
+  font-size: inherit;
+}
+
+@media #{$xs-screen} {
+  .logo-white {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,200 @@
+@import "../../../../styles/variables";
+
+.ProjectContent {
+  .title {
+    font-size: 34px;
+    color: $secondary-color;
+    font-weight: 500;
+    padding: 66px 0 9px;
+    margin-bottom: 40px;
+  }
+
+  .text-description {
+    font-family: $secondary-font;
+    padding: 20px 20px 50px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    color: $secondary-color;
+    font-weight: 600;
+    margin-bottom: 19px;
+    text-transform: capitalize;
+  }
+
+  .sub-desc {
+    color: $secondary-color;
+    font-size: 16px;
+  }
+
+  .sub-text {
+    margin-top: $pixel-base;
+    color: $secondary-color;
+    font-size: 14px;
+    padding-top: $pixel-base;
+    padding-bottom: $pixel-base;
+  }
+
+  .text-bg {
+    font-size: 16px;
+  }
+
+  .sub-spacer {
+    margin-top: $pixel-base * 3;
+  }
+
+  .sub-image {
+    width: 100%;
+    margin-top: $pixel-base;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .link-to-text {
+    margin: $pixel-base * 5 0 $pixel-base * 2 0;
+
+    a {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+
+  .grid-title {
+    color: $secondary-color;
+    text-transform: capitalize;
+    height: 20%;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: $pixel-base;
+    font-size: 17px;
+    font-weight: 500;
+    word-break: break-word;
+  }
+
+  .grid-body {
+    background: $project-content-background;
+    padding: $pixel-base * 2;
+    font-family: $secondary-font;
+
+    .grid-body-content {
+      font-size: 24px;
+      font-weight: 300;
+      color: $secondary-color;
+    }
+
+    .grid-body-description {
+      font-size: 10px;
+      color: $secondary-color-lighter;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+
+  .project-table {
+    margin-top: 5px;
+    position: relative;
+    max-height: max-content;
+    height: 800px;
+    transition: height 0.25s;
+
+    table {
+      border-spacing: 0;
+
+      .thead-white {
+        background: $white;
+        text-transform: uppercase;
+        font-family: $secondary-font;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        color: $secondary-color;
+        text-align: left;
+        cursor: pointer;
+        transition: 0.15s;
+
+        &:active{
+         transform: scale(0.995);
+          box-shadow: 0 0 2px 1px rgba(0,0,0,0.1);
+        }
+
+        th {
+          vertical-align: middle;
+          border: none;
+        }
+      }
+
+      .tbody-white {
+        font-family: $secondary-font;
+        font-size: 18px;
+        font-weight: 300;
+        color: $charcoal-grey-two;
+        text-transform: capitalize;
+        opacity: 1;
+        transition: 0.25s;
+
+        td {
+          height: $pixel-base * 10;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .collapse-button {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: 0.25s;
+
+    &.-closed {
+      transform: rotate(180deg);
+    }
+
+    img {
+      width: 16px;
+      height: 9px;
+    }
+  }
+
+  .-minimized {
+    height: 65px;
+    overflow: hidden;
+    width: calc(100% + 40px);
+    transition: height 0.25s;
+    table {
+      border-spacing: 0;
+
+      .tbody-white {
+        opacity: 0;
+        transition: 0.25s;
+      }
+    }
+  }
+
+  .table-wrapper {
+    width: calc(100% - 32px);
+  }
+
+  .component-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  @import "./ProjectDetails/ProjectDetails.scss";
+  @import "./Forecast/Forecast.scss";
+  @import "./Documents/Documents.scss";
+  @import "./Invest/Invest.scss";
+}

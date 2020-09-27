@@ -1,0 +1,20 @@
+@import "../../../styles/variables";
+
+.ProfileSettings {
+  padding-top: $pixel-base * 6;
+  padding-bottom: $pixel-base * 4;
+
+  .settings-content {
+    .ProfilePageContainer {
+      margin-top: $pixel-base * 10;
+
+      @media #{$xs-screen} {
+        margin-top: $pixel-base * 5;
+      }
+    }
+
+    .RegisterNewEntity {
+      margin-top: $pixel-base * 5;
+    }
+  }
+}

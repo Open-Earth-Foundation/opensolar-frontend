@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.progress-bar{
+    width: 100%;
+    height: 5.1px;
+    background: $white;
+    border-radius: 5px;
+    margin: $pixel-base * 2 0 $pixel-base * 2 0;
+
+    .progress-success {
+        height: 100%;
+        background: $primary-color;
+        border-radius: 5px;
+    }
+
+    .progress-label {
+        font-size: 13px;
+        font-weight: 600;
+        color: $primary-color;
+        position: absolute;
+        left: $pixel-base * 4;
+    }
+}

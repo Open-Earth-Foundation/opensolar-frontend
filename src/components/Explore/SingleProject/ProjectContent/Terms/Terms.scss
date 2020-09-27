@@ -1,0 +1,45 @@
+@import "../../../../../styles/variables";
+
+.Terms {
+  background: $project-content-background;
+  font-family: $secondary-font;
+
+  .sub-desc {
+    font-size: 14px;
+  }
+
+  .terms-table {
+    tr:last-child td {
+      border-bottom: 1px solid #dee2e6;
+    }
+  }
+
+  .text-description > div {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .security-note {
+    color: $secondary-color;
+    padding-top: 5px;
+
+    > div {
+      padding: 0 27px;
+    }
+
+    .security-title {
+      font-size: 16px;
+      font-weight: 300;
+      margin-top: 18px;
+      text-transform: uppercase;
+    }
+
+    .security-text {
+      color: $secondary-color;
+      font-size: 14px;
+      line-height: 1.43;
+      margin-top: $pixel-base * 2;
+      margin-bottom: 53px;
+    }
+  }
+}

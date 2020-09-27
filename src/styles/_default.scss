@@ -1,0 +1,46 @@
+@import "fonts";
+@import "variables";
+
+a {
+  text-decoration: none;
+  color: $third-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.header-4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $secondary-color;
+}
+
+.margin-bottom-x4 {
+  margin-bottom: $pixel-base * 4;
+}
+
+.margin-top {
+  margin-top: $pixel-base * 4;
+}
+
+.margin-bottom {
+  margin-bottom: $pixel-base !important;
+}
+
+.mg-top-15 {
+  margin-top: $pixel-base * 2;
+}
+
+.center-al {
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+@import "../../styles/variables";
+
+.AuthPage {
+  .grey-bar {
+    background-color: #d8d8d8;
+    height: 27px;
+    width: 100%;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 100%;
+  }
+  .auth-image {
+    background-image: url("https://i.ibb.co/Bcj4d3y/theearth.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+  }
+
+  .auth-form {
+    margin: 0px auto;
+    text-align: center;
+    .auth-form-container {
+      height: 100%;
+    }
+  }
+
+  .auth-title {
+    font-family: $secondary-font;
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  .auth-notice {
+    color: $secondary-color;
+    font-size: 12px;
+  }
+
+  .auth-button {
+    width: 139px;
+    margin: 0px auto;
+  }
+}

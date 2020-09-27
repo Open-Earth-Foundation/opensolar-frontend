@@ -1,0 +1,43 @@
+@import "../../../../styles/variables";
+
+.Slider {
+  .slider-title {
+    color: $secondary-color-lighter;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: $pixel-base;
+  }
+  .slider-container {
+    height: $pixel-base * 7;
+
+    .input-range__track {
+      height: 6px;
+    }
+
+    .input-range__track--background {
+      background: $input-color-lighter;
+    }
+
+    .input-range__track--active {
+      background: $input-color-active-slider;
+    }
+
+    .input-range__slider {
+      background: $primary-color;
+      border: 1px $primary-color;
+    }
+    .input-range__label {
+      color: $secondary-color-lighter;
+      font-family: $secondary-font;
+      font-size: 10px;
+      font-weight: 600;
+    }
+    .input-range__label--value {
+      top: 5px;
+    }
+    .input-range__label--max, .input-range__label--min {
+      display: none;
+    }
+  }
+}
